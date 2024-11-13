@@ -1,3 +1,2 @@
 module.exports.Account = require('./Account.js');
-
-// Testing GitHub Actions
+module.exports.Domo = require('./Domo.js');
