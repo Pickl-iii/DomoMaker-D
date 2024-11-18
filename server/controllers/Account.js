@@ -4,9 +4,11 @@ const { Account } = models;
 
 const loginPage = (req, res) => res.render('login');
 
+const signupPage = (req, res) => res.render('signup');
+
 const logout = (req, res) => {
-  req.session.destroy();
-  res.redirect('/');
+    req.session.destroy();
+    res.redirect('/');
 };
 
 const login = (req, res) => {
@@ -58,6 +60,7 @@ const signup = async (req, res) => {
 
 module.exports = {
   loginPage,
+  signupPage,
   logout,
   login,
   signup,
